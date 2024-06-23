@@ -1,16 +1,17 @@
 {% extends 'base.html' %}
-{%  load static %}
+{% load i18n %}
 
 {%  block content %}
     <div style="text-align:center;">
-        <h4>Login</h4>
-    </div>
-    <div>
-        <form action="" method="post">
-            {%  csrf_token %}
-            {{ form }}
-            <input type="submit" class="btn btn-primary">
-        </form>
+        <div>
+            <h4>Login</h4>
+        </div>
+        <div>
+            <form action="" method="post">
+                {%  csrf_token %}
+                {{ form }}
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
     </div>
 {%  endblock %}
-
